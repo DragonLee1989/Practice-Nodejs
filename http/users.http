@@ -1,0 +1,33 @@
+
+### GET ALL USER
+GET http://localhost:9000/api/v1/users
+
+### Create a new USER
+POST  http://localhost:9000/api/v1/users
+Content-Type: application/json
+
+{
+    "firstName": "Khanh",
+    "lastName": "Le Kim",
+    "email": "khanh@gmail.com",
+    "moblie": "0909789456"
+}
+
+### GET USER BY ID
+GET http://localhost:9000/api/v1/users/661684643ec7839d9b1c8924
+
+
+### UPDATE A USER
+
+PUT  http://localhost:9000/api/v1/users/661684643ec7839d9b1c8924
+Content-Type: application/json
+
+{
+    "firstName": "Trong",
+    "lastName": "Le Kim",
+    "email": "trong@gmail.com",
+    "moblie": "0909789456"
+}
+
+### DELETE USER BY ID
+DELETE  http://localhost:9000/api/v1/users/661684643ec7839d9b1c8924
